@@ -1,6 +1,6 @@
 ### Operadores
 
-###Operadores Aritméticos
+### Operadores Aritméticos
 | Operador | Equivalente |
 |--------------|----------------|
 | **+** | Soma   \***também usado para concatenar String**|
@@ -9,7 +9,7 @@
 | **/** |  Divisão|
 | **%** |  Resto da divisão|
 
-###Operadores de comparação
+### Operadores de comparação
 | Operador | Equivalente |
 |--------------|----------------|
 | **>** |  Maior que |
@@ -20,9 +20,10 @@
 |  **!=** |   Diferente de |    
 
 
-###Operadores Lógicos
+### Operadores Lógicos
 |Operador | Equivalente|
 |-------------|----------------|
 | **&&** |  *AND* exige que **todas** condições sejam verdadeiras |
 | **&#124;&#124;** | *OR* exige que apenas **uma** das condições seja verdadeira|
 | **!**| *Not* usado para negar alguma expressão  |
+---
