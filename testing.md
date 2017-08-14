@@ -29,6 +29,27 @@ func TestSoma(t *testing.T){
 }
 ```
 
-Para executar nossos testes executamos **go test**, há dois parâmetros que podemos passar junto ao comando -v *verbose* para mais detalhes e *--cover* para mostrar a porcentagem da cobertura dos testes. Importante, *go test* procura e executa os arquivos *_test.go*, se se criar seu projeto com packages, pode executar **go test ./...** desta forma ele irá procurar nos diretórios.
+Para executar nossos testes executamos **go test**, há dois parâmetros que podemos passar junto ao comando -v *verbose* para mais detalhes e *-cover* para mostrar a porcentagem da cobertura dos testes. Importante, *go test* procura e executa os arquivos *_test.go*, se se criar seu projeto com packages, pode executar **go test ./...** desta forma ele irá procurar nos diretórios.
 
+### Table test
+```go
+//arquivo main_test.go
+package main
+import "testing"
+func TestSoma(t *testing.T){
+	data := []struct{
+		x,y,result int
+		}{
+			{15,16,31},
+			{10,5,15},
+			{400,255,655},
+			}
+	for _,row := range data{
+		n := Soma(row.x, row.y)
+		if n != row.result {
+			t.Errof("A soma de (%d+%d) deveveria ser: %d, mas o resultado foi %d",row.x,row.y,row.result,n)
+		}
+	}
+}
+```
 ---
