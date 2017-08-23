@@ -37,7 +37,7 @@ if linguagem == "Java" {
 
 ### Switch 
 Também não temos novidades neste comando.
-```
+```go
 linguagem = "GO"
 switch linguagem {
   case "Java":
