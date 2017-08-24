@@ -33,7 +33,7 @@ import "encoding/json"
 	Todos arquivos devem conter o mesmo package name.  
 
 Como já devem ter notado o formato dos pacotes é repositório/user/package. Seguindo esta regra vamos criar nosso pacote. 
-Mesmo quando vamos criar um pacote interno devemos seguir esta estrutura, quando importarmos não devemos fazer algo como **import ./meuPacote**.
+Mesmo quando vamos criar um pacote interno devemos seguir esta estrutura, quando importarmos não devemos fazer algo como **import ./myPackage**.
 
 ```go
 // $GOPATH/src/github.com/renatosuero/unuseful
