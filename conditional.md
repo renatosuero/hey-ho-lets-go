@@ -56,7 +56,7 @@ switch linguagem {
     fmt.Println("Memória por favor")
   case "PHP":
     fmt.Println("Fazemos fazer spaghetti")
-  case "GO":
+  case "GO","Elixir":
     fmt.Println("Yeah")
   default:
     fmt.Println("Eita.... começo a pensar que é ASP")
