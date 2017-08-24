@@ -58,7 +58,7 @@ switch linguagem {
     fmt.Println("Fazemos fazer spaghetti")
   case "GO":
     fmt.Println("Yeah")
-  case default:
+  default:
     fmt.Println("Eita.... começo a pensar que é ASP")
 }
 ```
