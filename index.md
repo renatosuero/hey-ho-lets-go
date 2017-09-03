@@ -23,7 +23,7 @@
 [11. Métodos](methods.md)  
 [12. Interfaces](interfaces.md)  
 [13. Pacotes](package.md)  
-14. Concorrência    
+[14. Concorrência](concurrency.md)  
  14.1. Goroutines    
  14.2. Channels  
  14.3. Buffer  
