@@ -31,4 +31,4 @@
  14.5. WaitGroup  
  14.6. Mutex  
  14.7. Atomic  
-15. [Testing](testing.md)  
+[15. Testing](testing.md)  
