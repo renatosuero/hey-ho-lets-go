@@ -29,6 +29,6 @@
  14.3. Buffer  
  14.4. Select  
  14.5. WaitGroup  
- 14.6. Mutex  
- 14.7. Atomic  
+ 14.6. Atomic  
+ 14.7. Mutex  
 [15. Testing](testing.md)  
