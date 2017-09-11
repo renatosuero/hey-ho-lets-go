@@ -81,8 +81,27 @@ func showValue(wg *sync.Value,value int){
 }
 ```
 ### Atomic
+O pacote **sync/amotic** fornece mecanismo de *lock* low-level para sincronia de valores inteiros e ponteiros.
+
+```go
+var counter int = 0
+atomic.AddUint64(&counter, 1) //Executa a operação no variável
+atomic.LoadUint64(&counter) // Resgata o valor na varivável
+```
+Este exemplo é melhor visto em funcionamento.Vamos ao código:
+
+> **Gosched** cede o controle para função princial, permitindo que outros goroutines funcionem. Não suspende o goroutine atual, então a execução é retomada.  
 
 ### Mutex
+O pacote **sync** fornece o **Mutex** *mutual exclusion locks*, também é um mecaniscmo de *lock* assegurando que apenas uma *goroutine* no momento pode executar o código.
+
+```go
+var mutex sync.Mutex
+m.Lock()
+//your code here
+m.Unlock()
+```
+Este exemplo é melhor visto em funcionamento.Vamos ao código:
 
 
 ___
