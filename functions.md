@@ -83,7 +83,7 @@ sum(10,20,5)
 ```
 Funções anônimas, são interessantes deseja definir uma função em linha sem ter que nomeá-la,veja um exemplo:
 ```go
-func sumTen(value int){
+func sumTen(value int)int{
     return func() int{	
       return value + 10
     }
