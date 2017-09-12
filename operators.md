@@ -5,7 +5,7 @@
 |--------------|----------------|
 | **+** | Soma   \***também usado para concatenar String**|
 | **-** |  Subtração |
-| *****  |  Multiplicação|
+| **\***  |  Multiplicação|
 | **/** |  Divisão|
 | **%** |  Resto da divisão|
 
