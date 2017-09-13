@@ -16,23 +16,23 @@ if err != nil {
 }
 ```
 
-Por convenção o error é o último valor retornado na função.Como no exemplo:
+Por convenção o error é o último valor retornado na função. Como no exemplo: [Playground](https://play.golang.org/p/P6WyfSEZeK)
 ```go
 import "errors"
 import "log"
-func division(x,y int) (int,err){
-	if y == 0{
-		err := errors.New("Não é possível fazer divisão por zero.")
-		return 0,err
-	}else{
-		result := x/y
-		return result,nil
+
+func division(x, y int) (int, error) {
+	if y == 0 {
+		return 0, errors.New("Não é possível fazer divisão por zero.")
 	}
+
+	result := x / y
+	return result, nil
 }
 
-result,err := division(10,0)
+result, err := division(10, 0)
 if err != nil {
-	log.Fatal(err)
+    log.Fatal(err)
 }
 ```
 ---

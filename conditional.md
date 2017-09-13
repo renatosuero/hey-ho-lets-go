@@ -36,7 +36,7 @@ if linguagem == "Java" {
 ```
 
 ### Switch 
-Também não temos novidades neste comando.
+Também não temos novidades neste comando. [Playground](https://play.golang.org/p/bvH6FYmkuS)
 ```go
 linguagem = "GO"
 switch linguagem {
@@ -48,7 +48,7 @@ switch linguagem {
     fmt.Println("Yeah")
 }
 ```
-Também temos um "else", usando o comando default.
+Também temos um "else", usando o comando default. [Playground](https://play.golang.org/p/SJ1MLg7uQH)
 ```go
 linguagem = "GO"
 switch linguagem {
@@ -60,6 +60,18 @@ switch linguagem {
     fmt.Println("Yeah")
   default:
     fmt.Println("Eita.... começo a pensar que é ASP")
+}
+```
+Também é possivel fazer a comparação diretamente no case: [Playground](https://play.golang.org/p/_mFgZpZAMD) 
+```go
+linguagem := "GO"
+switch {
+case linguagem == "JAVA":
+    fmt.Println("Memória por favor")
+case linguagem == "PHP":
+    fmt.Println("Fazemos fazer spaghetti")
+case linguagem == "GO":
+    fmt.Println("Yeah")
 }
 ```
 ___
