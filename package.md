@@ -13,7 +13,7 @@ Acessando *cd $GOPATH/src* deverá ver uma pasta github/golang/dep. Está é a f
 Go possui a palavra reservada *import*, para funções da *standard library* apenas colocamos o nome do pacote, por ex.:
 ```go
 import "fmt"
-import(
+import (
 	"math"
 	"log"
 )
@@ -38,7 +38,8 @@ Mesmo quando vamos criar um pacote interno devemos seguir esta estrutura, quando
 ```go
 // $GOPATH/src/github.com/renatosuero/unuseful
 package unuseful
-func Something(){
+
+func Something() {
 }
 ```
 
@@ -46,10 +47,12 @@ GO tem uma regra para proteger funções, ou seja, funções que você usa inter
 
 ```go
 package unuseful
-func Something(){
+
+func Something() {
 	secretFunc()
 }
-func secretFunc(){
+
+func secretFunc() {
 }
 ```
 
@@ -57,15 +60,17 @@ Também é possível criar pacotes dentro de pacotes. Vamos criar um novo pacote
 Criamos uma pasta chamada foo e digitamos o seguinte código: *O caso do pacote encoding/json que vimos antes*
 ```go
 package foo
-func Bar(){
+func Bar() {
 }
 ```
 
 Pode haver situações onde vc quer só carregar o pacote e não usar funções dele. Por ex. pacotes de drivers para databases. Estas funções serão carregadas no ínicio da execução do projeto, podemos usar estas funções para inicializar nossa lógica. Para isso criamos a função **init**.
 ```go
 package unuseful
+
 import "fmt"
-func init(){
+
+func init() {
 	fmt.Println("Carregou nosso pacote")
 }
 ```
