@@ -52,7 +52,7 @@ type Person struct {
 func (person Person) fullName() string {
 	return person.Name + " " + person.Surname
 }
-func (person *Pessoa) setName(newName string) {
+func (person *Person) setName(newName string) {
 	person.Name = newName
 }
 func main() {
