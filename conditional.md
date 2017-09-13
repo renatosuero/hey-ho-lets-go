@@ -62,7 +62,7 @@ switch linguagem {
     fmt.Println("Eita.... começo a pensar que é ASP")
 }
 ```
-Também é possivel fazer a comparação diretamente no case: [Playground](https://play.golang.org/p/_mFgZpZAMD) 
+Também é possivel fazer a comparação diretamente no case: [Playground](https://play.golang.org/p/5uG_fZR5nh) 
 ```go
 linguagem := "GO"
 switch {
@@ -70,7 +70,7 @@ case linguagem == "JAVA":
     fmt.Println("Memória por favor")
 case linguagem == "PHP":
     fmt.Println("Fazemos fazer spaghetti")
-case linguagem == "GO":
+case linguagem == "GO" || linguagem =="elixir":
     fmt.Println("Yeah")
 }
 ```
