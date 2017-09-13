@@ -1,6 +1,6 @@
 ## Métodos
 
-Um método nada mais é do que uma função com um Receiver, em outras palavras ela "pertence" a uma struct.A sintaxe dela é
+Um método nada mais é do que uma função com um Receiver, em outras palavras ela **`"pertence"`** a uma struct. A sintaxe dela é:
 ```go
 func (name Struct) nameFunction(params) returnValue {
 	//Seu código
@@ -42,9 +42,8 @@ func main() {
 //Renato Suero
 //Renato Suero
 ```
-Como podem ver não alteramos o valor da nossa struct, se quiserem alterar o valor é necessário o uso de ponteiros, no exemplo abaixo eu só adiciono um **\*** no segundo método (setName) fazendo ele receber o endereço em memória da nossa struct.
+Como podem ver não alteramos o valor da nossa struct, se quiserem alterar o valor é necessário o uso de ponteiros, no exemplo abaixo eu só adiciono um **`*`** no segundo método (`setName`) fazendo ele receber o endereço em memória da nossa struct.
 ```go
-
 type Person struct {
 	Name, Surname string
 }
