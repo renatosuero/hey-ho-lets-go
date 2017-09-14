@@ -13,7 +13,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(Soma(40, 2)
+	fmt.Println(Soma(40, 2))
 }
 func Soma(x, y int) int {
 	return x + y
