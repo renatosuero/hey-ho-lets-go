@@ -43,20 +43,23 @@ renato.Database = "PostgreSQL"
 renato.Language = "GO"
 ```
 ### Ponteiros 
-GO possui ponteiros, mas não são ponteiros aritméticos. Por padrão GO passa argumento por valor, ou seja, copiando o argumento. Se você quer passar valor por referência, você precisa usar ponteiros ou usar estruturas usando valores referenciados em Slices e Maps. Para acessar uma variável em memória precisamos de seu endereço, podemos usar **`&variavel`** para tê-lo. Para ler seu valor usamos **`*variavel`**.
+GO possui ponteiros, mas não são ponteiros aritméticos. Por padrão GO passa argumento por valor, ou seja, copiando o argumento. Se você quer passar valor por referência, você precisa usar ponteiros ou usar estruturas usando valores referenciados em Slices e Maps. Para acessar uma variável em memória precisamos de seu endereço, podemos usar **`&variavel`** para tê-lo. Para ler seu valor usamos **`*variavel`**. [Playground](https://play.golang.org/p/lVeYEi6dtY)
 ```go
 func main() {
 	x := 10
-	zero(x)
+	zero(x) // 10
 	fmt.Println(x)
-	zero2(&x)
+	zero2(&x) // 0
 	fmt.Println(x)
 }
 func zero(x int) {
+	fmt.Println(x) // 10
 	x = 0
 }
 func zero2(x *int) {
+	fmt.Println(x) // 0x10410020
 	*x = 0
 }
+
 ```
 ___

@@ -85,7 +85,7 @@ func showValue(wg *sync.Value, value int) {
 }
 ```
 ### Atomic
-O pacote **sync/amotic** fornece mecanismo de *lock* low-level para sincronia de valores inteiros e ponteiros.
+O pacote **sync/atomic** fornece mecanismo de *lock* low-level para sincronia de valores inteiros e ponteiros.
 
 ```go
 var counter int = 0
